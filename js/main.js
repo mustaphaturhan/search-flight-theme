@@ -28,7 +28,6 @@ $(document).ready(function() {
         var sp = parseInt($('#student-passenger').val());
         var cp = parseInt($('#child-passenger').val());
         var bp = parseInt($('#baby-passenger').val());
-        var op = parseInt($('#old-passenger').val());
         var fc = $('#flight-class option:selected').text();
 
         if (bp === ap) {
@@ -47,7 +46,7 @@ $(document).ready(function() {
             bp = bp - 1;
         }
 
-        var totalCount = ap + sp + cp + bp + op;
+        var totalCount = ap + sp + cp + bp;
         $('#kisi-sayisi').val(totalCount + ' - ' + fc);
     });
 });
