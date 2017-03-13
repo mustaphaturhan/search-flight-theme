@@ -11,6 +11,8 @@ I'm using:
 * [Twitter Bootstrap] - great UI boilerplate for modern web apps
 * [Bootstrap 3 Date/Time Picker](https://github.com/Eonasdan/bootstrap-datetimepicker) - for nice dates.
 * [Bootstrap Spinner](https://github.com/indigojs/bootstrap-spinner)
+* [Tdreyno's airports.json](https://gist.github.com/tdreyno/4278655) - for airports list.
+* [EasyAutoComplete](https://github.com/pawelczak/EasyAutocomplete) - for auto complete.
 
 ### Installation
 
