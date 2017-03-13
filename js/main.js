@@ -30,6 +30,23 @@ $(document).ready(function() {
         var bp = parseInt($('#baby-passenger').val());
         var op = parseInt($('#old-passenger').val());
         var fc = $('#flight-class option:selected').text();
+
+        if (bp === ap) {
+            alert('Baby passenger count cannot equal to adult passenger');
+            $('#baby-passenger').val(bp - 1);
+            bp = bp - 1;
+        } else if (cp === ap) {
+            alert('Child passenger count cannot equal to adult passenger');
+            $('#child-passenger').val(cp - 1);
+            cp = cp - 1;
+        } else if (bp + cp === ap | bp + cp > ap) {
+            alert('Baby passenger and child passenger count cannot bigger than or equal to adult passenger');
+            $('#baby-passenger').val(bp - 1);
+            $('#child-passenger').val(cp - 1);
+            cp = cp - 1;
+            bp = bp - 1;
+        }
+
         var totalCount = ap + sp + cp + bp + op;
         $('#kisi-sayisi').val(totalCount + ' - ' + fc);
     });
