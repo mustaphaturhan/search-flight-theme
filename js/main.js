@@ -22,17 +22,15 @@ $(document).ready(function() {
             $('.list-col').removeClass('col-lg-12').addClass('col-lg-9');
         });
     })
-});
 
-$(document).on('click', '.panel-heading', function(e) {
-    var $this = $(this);
-    if (!$this.hasClass('panel-collapsed')) {
-        $this.parents('.panel').find('.panel-body').slideUp();
-        $this.addClass('panel-collapsed');
-        $this.find('.glyphicon').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
-    } else {
-        $this.parents('.panel').find('.panel-body').slideDown();
-        $this.removeClass('panel-collapsed');
-        $this.find('.glyphicon').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
-    }
-})
+    $('#adult-passenger, #student-passenger, #child-passenger, #baby-passenger, #old-passenger, #flight-class').change(function() {
+        var ap = parseInt($('#adult-passenger').val());
+        var sp = parseInt($('#student-passenger').val());
+        var cp = parseInt($('#child-passenger').val());
+        var bp = parseInt($('#baby-passenger').val());
+        var op = parseInt($('#old-passenger').val());
+        var fc = $('#flight-class option:selected').text();
+        var totalCount = ap + sp + cp + bp + op;
+        $('#kisi-sayisi').val(totalCount + ' - ' + fc);
+    });
+});
