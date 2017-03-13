@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="css/easy-autocomplete.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -410,7 +411,8 @@
                             </div>
                             <div class="box-desc">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio amet odit nisi magni, deserunt quae in similique architecto eveniet, nobis aliquid officia perferendis praesentium dolorem, velit omnis adipisci, veritatis
-                                    explicabo.</p>
+                                    explicabo.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -590,6 +592,19 @@
             $("#donus-tarihi").on("dp.change", function(e) {
                 $('#gidis-tarihi').data("DateTimePicker").maxDate(e.date);
             });
+
+            var options = {
+                url: "data/airports.json",
+
+                getValue: "name",
+
+                list: {
+                    match: {
+                        enabled: true
+                    }
+                }
+            };
+            $("#kalkis-yeri, #inis-yeri").easyAutocomplete(options);
         });
     </script>
 </body>
