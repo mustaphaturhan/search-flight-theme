@@ -27,6 +27,5 @@ Just copy all thing to new folder. And edit HTML's.
 License
 ----
 MIT
-**Free Software, Hell Yeah!**
 
    [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
