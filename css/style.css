@@ -343,8 +343,6 @@ a.promotion-link {
 .form-control[readonly] {
     background: #fff;
     color: #999;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
 }
 
 .form-control[readonly]:focus {
