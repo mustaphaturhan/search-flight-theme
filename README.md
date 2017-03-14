@@ -14,12 +14,11 @@ I'm using:
 * [Tdreyno's airports.json](https://gist.github.com/tdreyno/4278655) - for airports list.
 * [EasyAutoComplete](https://github.com/pawelczak/EasyAutocomplete) - for auto complete.
 
-### Installation
+# Installation
 
 Just copy all thing to new folder. And edit HTML's.
 
 # To-do's
-  - "Number of People" thing is not working. Fix this.
   - Nice list for results.
   - Payment page.
   - Register and login page.
