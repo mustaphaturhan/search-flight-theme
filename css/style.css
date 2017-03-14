@@ -561,6 +561,10 @@ section:last-child {
     .row-passengers {
         width: 82%;
     }
+    .form-container {
+        width: 95%;
+        margin: 10px auto;
+    }
 }
 
 
