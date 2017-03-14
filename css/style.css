@@ -109,7 +109,7 @@ section {
 }
 
 .currency {
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 
@@ -483,16 +483,9 @@ section:last-child {
 }
 
 .navbar-toggle {
-    color: #000;
-    background: #fff;
-}
-
-.collapse.in {
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.in .navbar-nav {
-    padding: 0 40px 10px 40px;
+    color: #fff;
+    background: transparent;
+    margin-top: 12px;
 }
 
 
@@ -568,7 +561,17 @@ section:last-child {
 
 /* Small Devices, Tablets */
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    .navbar-collapse .navbar-nav {
+        width: 95%;
+        margin: 0 auto;
+        padding-bottom: 15px;
+    }
+    .navbar-nav .open .dropdown-menu>li>a {
+        background: #fff;
+        padding: 12px;
+    }
+}
 
 
 /* Extra Small Devices, Phones */
