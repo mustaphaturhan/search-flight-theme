@@ -2,6 +2,11 @@ $(document).ready(function() {
     $('#popup-opener').on('click', function() {
         $('.row-passengers').toggle();
     });
+    $('.submit-icon').on('click', function() {
+        $('.row-passengers').fadeOut(function() {
+            $(this).hide();
+        });
+    });
     $('.btn-tek-yon').on('click', function() {
         $('#donus-tarihi').attr('disabled', 'disabled');
     });
