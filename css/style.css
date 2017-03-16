@@ -571,6 +571,9 @@ section:last-child {
         background: #fff;
         padding: 12px;
     }
+    .navbar-airticket {
+        background: rgba(39,50,61,1);
+    }
 }
 
 
