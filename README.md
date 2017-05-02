@@ -2,7 +2,7 @@
 
 Hi! This is ticket theme for people who selling tickets for airplane. Also, you can use this for bus tickets of course. Theme is under-development for now. But you can use if you want!
 
-# [Demo](https://odunluzikkim.github.io/buy-ticket-theme/)
+# [Demo](https://odunluzikkim.github.io/search-flight-theme/)
 
 # Tech
 
